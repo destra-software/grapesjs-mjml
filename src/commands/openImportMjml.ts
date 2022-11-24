@@ -25,6 +25,7 @@ export default (editor: grapesjs.Editor, opts: RequiredPluginOptions, cmdId: str
       btnEl.innerHTML = getI18nLabel('button');
       btnEl.className = `${pfx}btn-prim ${pfx}btn-import`;
       btnEl.onclick = () => this.onImport(codeEditor.editor.getValue());
+      btnEl.type = 'button';
 
       if (labelImport) {
         const labelEl = document.createElement('div');

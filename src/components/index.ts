@@ -61,8 +61,8 @@ export default (editor: grapesjs.Editor, opt: RequiredPluginOptions) => {
     getMjmlAttributes() {
       const attr = this.get('attributes') || {};
       delete attr.style;
-      const src = this.get('src');
-      if (src) attr.src = src;
+      // const src = this.get('src');
+      // if (src) attr.src = src;
       return attr;
     },
 
